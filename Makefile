@@ -15,6 +15,9 @@ help:
 docker-build-slim:
 	@docker build -t dataeng-dibimbing/jupyter -f ./docker/Dockerfile.jupyter .
 
+docker-build-slim-windows:
+	@docker build -t dataeng-dibimbing/jupyter -f ./docker/Dockerfile.jupyter .
+
 docker-build:
 	@echo '__________________________________________________________'
 	@echo 'Building Docker Images ...'
@@ -29,6 +32,18 @@ docker-build:
 	@echo '__________________________________________________________'
 	@docker build -t dataeng-dibimbing/jupyter -f ./docker/Dockerfile.jupyter .
 	@echo '==========================================================='
+
+docker-build-windows:
+	@echo '__________________________________________________________'
+	@echo 'Building Docker Images ...'
+	@echo '__________________________________________________________'
+	@docker build -t dataeng-dibimbing/spark -f ./docker/Dockerfile.spark .
+	@echo '__________________________________________________________'
+	@docker build -t dataeng-dibimbing/airflow -f ./docker/Dockerfile.airflow .
+	@echo '__________________________________________________________'
+	@docker build -t dataeng-dibimbing/jupyter -f ./docker/Dockerfile.jupyter .
+	@echo '==========================================================='
+
 
 docker-build-arm:
 	@echo '__________________________________________________________'
