@@ -13,9 +13,6 @@ help:
 	@echo "## clean			- Cleanup all running containers related to the challenge."
 
 docker-build-slim:
-	@chmod 777 logs/
-	@chmod 777 notebooks/
-	@docker network inspect dataeng-network >/dev/null 2>&1 || docker network create dataeng-network
 	@docker build -t dataeng-dibimbing/jupyter -f ./docker/Dockerfile.jupyter .
 
 docker-build:
