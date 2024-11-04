@@ -22,22 +22,14 @@ services:
   container_name: ${KSQL_CONTAINER_NAME}
   hostname: ${KSQL_HOST}
   depends_on:
-<<<<<<< HEAD
     - kafka
   ports:
     - "8088:8088"
   environment:
     - KSQL_BOOTSTRAP_SERVERS=${KAFKA_HOST}:9092
     - KSQL_CLIENT_AUTHENTICATION=none
-=======
-   - kafka
-  ports:
-   - "8088:8088"
-  environment:
-   - KSQL_BOOTSTRAP_SERVERS=${KAFKA_HOST}:9092
-   - KSQL_CLIENT_AUTHENTICATION=none
->>>>>>> 7c69d969da86ffefe2bed8b15e7f84ecb8a9d257
-
+    - kafka
+    
  kafka-ui:
   image: provectuslabs/kafka-ui:v0.7.0
   container_name: kafka-ui
