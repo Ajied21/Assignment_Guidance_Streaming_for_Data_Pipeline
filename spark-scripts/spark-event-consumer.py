@@ -22,10 +22,10 @@ os.environ["PYSPARK_SUBMIT_ARGS"] = (
 
 spark = (
     pyspark.sql.SparkSession.builder.appName("DibimbingStreaming")
-    .master(spark_host)
+    .master("local")
     .config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0")
     .config("spark.sql.shuffle.partitions", 4)
-    .config("spark.sql.streaming.forceDeleteTempCheckpointLocation", True)
+    #.config("spark.sql.streaming.forceDeleteTempCheckpointLocation", True)
     .getOrCreate()
 )
 
