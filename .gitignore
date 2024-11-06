@@ -2,39 +2,30 @@
 logs/*
 !logs/.gitkeep
 
-# Ignore all notebooks except the specific ones
-notebooks/*
-!notebooks/Dibimbing-kafka-1.ipynb
-!notebooks/Dibimbing-kafka-2.ipynb
-!notebooks/Dibimbing-spark-stream-1.ipynb
-!notebooks/Dibimbing-spark-stream-2.ipynb
-!notebooks/Dibimbing-spark.ipynb
+# Ignore all logs and their contents
+logs/*
 
-# Ignore all files in dags except Python files
+# Ignore all files in dags
 dags/*
-!dags/*.py
 
-# Ignore all data except CSV and JSON files
+# Ignore all data
 data/*
-!data/*.csv
-!data/*.json
 
-# Ignore all sql files except SQL files
+# Ignore all sql files
 sql/*
-!sql/*.sql
 
-# Ignore all Spark scripts except Python files
+# Ignore all Spark scripts
 spark-scripts/*
-!spark-scripts/*.py
 
-# Ignore all Kafka files except specific ones
+# Ignore all Kafka files
 kafka/*
-!kafka/__pycache__/
-!kafka/*.sql
-!kafka/*.json
-!kafka/*.py
-!kafka/*.proto
-!kafka/*.protobuf
+
+# Ignore all notebooks except the specific ones
+notebooks/Dibimbing-kafka-1.ipynb
+notebooks/Dibimbing-kafka-2.ipynb
+notebooks/Dibimbing-spark-stream-1.ipynb
+notebooks/Dibimbing-spark-stream-2.ipynb
+notebooks/Dibimbing-spark.ipynb
 
 # Ignore Docker Compose and Dockerfiles
 docker/docker-compose-airflow.yml

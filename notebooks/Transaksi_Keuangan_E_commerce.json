@@ -1,0 +1,28 @@
+{
+    "topic": "Data_Transaksi_Keuangan_E-commerce",
+    "partition": 3,
+    "offset": 12,
+    "key": "c73df56e-071a-4c3a-a72e-3c3f3687b704",
+    "value": {
+        "transaction_id": "c73df56e-071a-4c3a-a72e-3c3f3687b704",
+        "timestamp": "2024-08-10T19:02:47",
+        "user_id": "fa63263e-89f3-4947-a371-5c61cfb7d3e6",
+        "merchant_id": "117ff9fd-a659-4de4-a333-aa0c6eaf3036",
+        "amount": 40437.21,
+        "age": 25,
+        "gender": "Male",
+        "phone_number": "725-635-1114x5152",
+        "email": "april97@example.net",
+        "currency": "LBP",
+        "location": "Rodneyborough",
+        "country": "Zambia",
+        "payment_method": "Foreign Bank Transfer",
+        "product_id": "4dc610cc-fc53-408a-a604-cb62a7a2cd99",
+        "product_category": "Food and Beverages",
+        "quantity": 14,
+        "discount": 11,
+        "tax": 95,
+        "shipping_cost": 54,
+        "total_cost": 40575.21
+    }
+}
