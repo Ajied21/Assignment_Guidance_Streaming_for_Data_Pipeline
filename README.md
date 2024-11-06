@@ -3,7 +3,7 @@
 # Kafka
 
 <div style="text-align: center;">
-  <img src="https://www.rumahweb.com/journal/wp-content/uploads/2023/06/Terminologi-Apache-Kafka.png" width="350" alt="Terminologi Apache Kafka">
+  <img src="https://kafka.apache.org/images/apache-kafka.png" width="350">
 </div>
 
 1. Clone This Repo.
