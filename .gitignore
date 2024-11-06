@@ -1,7 +1,3 @@
-# Ignore all logs except .gitkeep
-logs/*
-!logs/.gitkeep
-
 # Ignore all logs and their contents
 logs/*
 
