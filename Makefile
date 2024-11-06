@@ -12,9 +12,6 @@ help:
 	@echo "## metabase			- Spinup metabase instance."
 	@echo "## clean			- Cleanup all running containers related to the challenge."
 
-docker-build-slim:
-	@docker build -t dataeng-dibimbing/jupyter -f ./docker/Dockerfile.jupyter .
-
 docker-build-slim-windows:
 	@docker build -t dataeng-dibimbing/jupyter -f ./docker/Dockerfile.jupyter .
 
@@ -65,7 +62,6 @@ jupyter:
 	@docker compose -f ./docker/docker-compose-jupyter.yml --env-file .env up -d
 	@echo 'Created...'
 	@echo 'Processing token...'
-	@sleep 20
 	@docker logs ${JUPYTER_CONTAINER_NAME} 2>&1 | grep '\?token\=' -m 1 | cut -d '=' -f2
 	@echo '==========================================================='
 
@@ -97,7 +93,7 @@ airflow:
 	@docker compose -f ./docker/docker-compose-airflow.yml --env-file .env up
 	@echo '==========================================================='
 
-postgres: postgres-create postgres-create-warehouse postgres-create-table postgres-ingest-csv
+postgres: postgres-create
 
 postgres-create:
 	@docker compose -f ./docker/docker-compose-postgres.yml --env-file .env up -d

@@ -1,6 +1,47 @@
+# Ignore all logs except .gitkeep
 logs/*
 !logs/.gitkeep
+
+# Ignore all notebooks except the specific ones
 notebooks/*
-!notebooks/*.ipynb
+!notebooks/Dibimbing-kafka-1.ipynb
+!notebooks/Dibimbing-kafka-2.ipynb
+!notebooks/Dibimbing-spark-stream-1.ipynb
+!notebooks/Dibimbing-spark-stream-2.ipynb
+!notebooks/Dibimbing-spark.ipynb
+
+# Ignore all files in dags except Python files
 dags/*
 !dags/*.py
+
+# Ignore all data except CSV and JSON files
+data/*
+!data/*.csv
+!data/*.json
+
+# Ignore all sql files except SQL files
+sql/*
+!sql/*.sql
+
+# Ignore all Spark scripts except Python files
+spark-scripts/*
+!spark-scripts/*.py
+
+# Ignore all Kafka files except specific ones
+kafka/*
+!kafka/__pycache__/
+!kafka/*.sql
+!kafka/*.json
+!kafka/*.py
+!kafka/*.proto
+!kafka/*.protobuf
+
+# Ignore Docker Compose and Dockerfiles
+docker/docker-compose-airflow.yml
+docker/docker-compose-datahub.yml
+docker/docker-compose-metabase.yml
+docker/docker-compose-postgres.yml
+docker/docker-compose-spark.yml
+docker/Dockerfile.airflow
+docker/Dockerfile.airflow-arm
+docker/Dockerfile.spark
