@@ -7,34 +7,24 @@
 </div>
 
 1. Clone This Repo.
-2. Run `make kafka` and Run `make Jupyter`
+2. Run `make kafka`, Run `make spark`, Run `make spark-produce` and Run `make spark-consume`
 
 ---
 ```
 ## docker-build                 - Build Docker Images (amd64) including its inter-container network.
-## jupyter                      - Spinup jupyter notebook for testing and validation purposes.
+## spark                        - Run a Spark cluster, rebuild the postgres container, then create the destination tables
 ## kafka                        - Spinup kafka cluster (Kafka+Zookeeper).
 ## clean                        - Cleanup all running containers related to the challenge.
 ```
 
 # Dokumentasi
 
--Topic ada 4 topic
+- Topic
 <div style="text-align: center;">
-    <img src="./images/Topic.png" alt="Architecture Overview" width="500"/>
+    <img src="./images/kafka.png" alt="Architecture Overview" width="500"/>
 </div>
 
-- Partition ada 5 
+- Output
 <div style="text-align: center;">
-    <img src="./images/Partition.png" alt="Architecture Overview" width="500"/>
-</div>
-
-- Consumer
-<div style="text-align: center;">
-    <img src="./images/Consumer.png" alt="Architecture Overview" width="500"/>
-</div>
-
-- KSQL DB
-<div style="text-align: center;">
-    <img src="./images/KSQLDB.png" alt="Architecture Overview" width="500"/>
+    <img src="./images/output_new.png" alt="Architecture Overview" width="500"/>
 </div>

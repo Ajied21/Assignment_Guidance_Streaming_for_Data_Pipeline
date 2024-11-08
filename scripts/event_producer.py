@@ -13,7 +13,7 @@ dotenv_path = Path("/opt/app/.env")
 load_dotenv(dotenv_path=dotenv_path)
 
 kafka_host = os.getenv("KAFKA_HOST")
-kafka_topic = os.getenv("KAFKA_TOPIC_NAME")
+kafka_topic = "test-data"
 
 producer = KafkaProducer(bootstrap_servers=f"{kafka_host}:9092")
 faker = Faker()

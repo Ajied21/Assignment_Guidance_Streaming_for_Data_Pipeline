@@ -160,7 +160,7 @@ spark-produce:
 	@echo '__________________________________________________________'
 	@docker exec ${SPARK_WORKER_CONTAINER_NAME}-1 \
 		python \
-		/scripts/event_producer.py
+		/spark-scripts/Streaming_for_Data_Pipeline_event_producer.py
 
 spark-consume:
 	@echo '__________________________________________________________'
@@ -168,7 +168,7 @@ spark-consume:
 	@echo '__________________________________________________________'
 	@docker exec ${SPARK_WORKER_CONTAINER_NAME}-1 \
 		spark-submit \
-		/spark-scripts/spark-event-consumer.py
+		/spark-scripts/Streaming_for_Data_Pipeline_event_consumer.py
 
 datahub-create:
 	@echo '__________________________________________________________'

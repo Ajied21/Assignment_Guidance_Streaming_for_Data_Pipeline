@@ -11,17 +11,21 @@ data/*
 sql/*
 
 # Ignore all Spark scripts
-spark-scripts/*
+spark-scripts/spark-event-consumer.py
+spark-scripts/spark-example.py
 
 # Ignore all Kafka files
 kafka/*
 
+images/Consumer.png
+images/KSQLDB.png
+images/Partition.png
+images/Topic.png
+
+scripts/event_producer.py
+
 # Ignore all notebooks except the specific ones
-notebooks/Dibimbing-kafka-1.ipynb
-notebooks/Dibimbing-kafka-2.ipynb
-notebooks/Dibimbing-spark-stream-1.ipynb
-notebooks/Dibimbing-spark-stream-2.ipynb
-notebooks/Dibimbing-spark.ipynb
+notebooks/*
 
 # Ignore Docker Compose and Dockerfiles
 docker/docker-compose-airflow.yml
