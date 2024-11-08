@@ -1,9 +1,0 @@
-{
-    "topic": "PAYMENT_METHOD_COUNTS",
-    "partition": 3,
-    "offset": 12,
-    "key": "Foreign Bank Transfer",
-    "value": {
-        "TRANSACTION_COUNT": 13
-    }
-}

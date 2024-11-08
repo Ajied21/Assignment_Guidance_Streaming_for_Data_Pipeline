@@ -1,9 +1,0 @@
-{
-    "topic": "AVG_AGE_PER_CATEGORY",
-    "partition": 2,
-    "offset": 13,
-    "key": "Office and School Supplies",
-    "value": {
-        "AVERAGE_AGE": 25.5
-    }
-}
