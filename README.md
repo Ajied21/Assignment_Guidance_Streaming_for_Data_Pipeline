@@ -48,12 +48,12 @@ Data yang digunakan dalam proses streaming ini berkaitan dengan transaksi kartu 
 
 # Dokumentasi
 
-- Topic
+- Topic dengan nama: Data_Transaksi_Kartu_Kredit
 <div style="text-align: center;">
     <img src="./images/kafka.png" alt="Architecture Overview" width="500"/>
 </div>
 
-- Output
+- Output consume
 <div style="text-align: center;">
     <img src="./images/output_new.png" alt="Architecture Overview" width="500"/>
 </div>
