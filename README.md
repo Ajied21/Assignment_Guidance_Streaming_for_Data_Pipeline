@@ -1,6 +1,6 @@
 # Dibimbing-Ajied, Data Engineering Bootcamp
 
-# Kafka
+# Stream Processing
 
 <div style="text-align: center;">
   <img src="https://cdn.prod.website-files.com/6659da8aecd70e0898c0d7ed/66a7d73ac95f1329da7ff2f3_blog-kafkaspark-hero.png" width="500">
